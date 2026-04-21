@@ -1,0 +1,140 @@
+/* Google Fonts for a clean look */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+
+/* Header - Matches your existing TS College design */
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo-box img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255,255,255,0.3);
+}
+
+.title-box {
+    flex: 1;
+    text-align: center;
+}
+
+.title-box h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.menu li a:hover,
+.menu li a.yemm-active {
+    background: rgba(255,255,255,0.2);
+    transform: translateY(-2px);
+}
+/* Contact Box */
+.content-box {
+    max-width: 1000px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+h2 { text-align: center; margin-bottom: 30px; color: #2c3e50; letter-spacing: 2px; }
+
+.row { display: flex; gap: 40px; flex-wrap: wrap; }
+.col-left, .col-right { flex: 1; min-width: 300px; }
+
+/* Form Elements */
+label { display: block; margin: 10px 0 5px; font-weight: 600; color: #555; }
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus { border-color: #3498db; background: #fff; box-shadow: 0 0 8px rgba(52, 152, 219, 0.2); }
+
+/* Buttons */
+.btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.submit { background: #3498db; color: white; margin-right: 10px; }
+.submit:hover { background: #2980b9; transform: translateY(-2px); }
+.reset { background: #eee; color: #333; }
+
+/* Map & Right Side */
+.map-box {
+    height: 250px;
+    background: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px 0;
+    border: 1px solid #ddd;
+}
+
+.col-right h4 { text-transform: uppercase; margin-top: 20px; color: #2c3e50; }
+.col-right p { color: #666; font-size: 0.95rem; line-height: 1.6; }
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-content a { color: #3498db; text-decoration: none; }
+.social-icons img { width: 30px; margin: 10px; transition: 0.3s; }
+.social-icons img:hover { transform: scale(1.2); }

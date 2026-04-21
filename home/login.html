@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TS College Events - Login</title>
+  <link rel="stylesheet" href="login.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+ <div class="header">
+    <div class="logo-box">
+        <img src="D:\2.jpg" alt="TS COLLEGE">
+    </div>
+       <div class="title-box">
+        <h1>TS COLLEGE EVENTS</h1>
+        </div>
+           <div>
+        <ul class="menu">
+          <li class="dropdown">
+                <a class="dropdown-toggle yemm-active" href="home.html">
+                    <i class="fa fa-home"></i>Home</a>
+            </li>
+            <li><a href="about project.html">About Project</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="student registration.html"> Registration</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+           </div>
+     </div>
+
+  <div class="page-wrap">
+    <main class="content-area">
+      <section class="login-card">
+        <div class="card-header">
+          <i class="fa fa-user-circle"></i>
+          <h2>Welcome Back</h2>
+          <p>Please enter your details to sign in</p>
+        </div>
+
+        <form class="login-form" id="loginForm"> 
+          <div class="input-group">
+            <label>Username</label>
+            <div class="input-wrapper">
+              <i class="fa fa-user"></i>
+              <input type="text" id="username" placeholder="Enter username" required />
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label>Role / Type</label>
+            <div class="input-wrapper">
+              <i class="fa fa-users-cog"></i>
+              <select id="userType">
+                <option value="">Select Role</option>
+                <option value="ADMIN">ADMIN</option>
+                <option value="TEACHER">TEACHER</option>
+                <option value="STUDENT">STUDENT</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label>Password</label>
+            <div class="input-wrapper">
+              <i class="fa fa-lock"></i>
+              <input type="password" id="password" placeholder="••••••••" required />
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-submit">Login Now</button>
+            <button type="reset" class="btn btn-reset">Clear</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <div class="row">
+    <footer>
+        <div class="footer-content">
+            <p>95 Mahadeva Road, Sherganj </p>
+            <p>SATNA, MADHYA PRADESH - 485002</p>
+            <p><a href="https://www.adityacollegesatna.com" target="_blank">www.adityacollegesatna.com</a></p>
+            <p><a href="mailto:admin@adityacollegesatna.com">admin@adityacollegesatna.com</a></p>
+            <p>+91-9522211043</p>
+            <hr>
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="https://youtube.com/@adityagroupofinstitutionssatna?si=zIFmOxRhtISiC2mx"><img src="youtube-icon.png" alt="YouTube"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+            <hr>
+        <div class="col-md-4 position- copyright">
+            <p>© 2025 College Events Management System. All Rights Reserved.</p>
+        </div>
+    </footer>
+</div>
+
+  <script src="login.js"></script>
+</body>
+</html>
